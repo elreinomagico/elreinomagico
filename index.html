@@ -130,7 +130,7 @@
                     <p>Descarga CalcMagic, la calculadora mágica más sorprendente del mundo de la magia. Para ello es necesario que tengas un dispositivo Android.</p>
                     <br>
                     <div class="flex justify-center">
-                        <a href="files/CalcMagic/calcmagic-1.0.3.apk" download="calcmagic-1.0.3" class="px-6 py-3 bg-yellow-500 text-black font-bold rounded-lg hover:bg-yellow-400">Descargar</a>
+                        <button onclick="goToDownload('CalcMagic')" class="px-6 py-3 bg-yellow-500 text-black font-bold rounded-lg hover:bg-yellow-400">Descargar</button>
                     </div>
                 </div>
             </div>
@@ -157,8 +157,15 @@
         window.open("https://discord.gg/pU2qkrgYKg", '_blank');
     }
 
-    function downloadCalcMagic() {
-        window.location = 'files/';
+    function goToDownload(param) {
+        switch (param) {
+            case 'CalcMagic':
+                window.open("https://drive.google.com/file/d/1Sg6oBONuIT95RJO_p5ETdJwHqqp5HQqi/view?usp=sharing", '_blank');
+                break;
+        
+            default:
+                break;
+        }
     }
 </script>
 
